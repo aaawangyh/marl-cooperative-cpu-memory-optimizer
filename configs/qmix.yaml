@@ -1,0 +1,14 @@
+
+seed: 123
+env:
+  num_cpu_agents: 4
+  num_mem_agents: 2
+  episode_length: 1000
+agent:
+  algo: QMIX
+  gamma: 0.99
+  lr: 5e-4
+  batch_size: 128
+  mixing_hidden_dim: 128
+logging:
+  out_dir: artifacts/qmix

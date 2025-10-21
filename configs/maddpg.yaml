@@ -1,0 +1,23 @@
+
+seed: 42
+env:
+  num_cpu_agents: 4
+  num_mem_agents: 2
+  episode_length: 1000
+  max_queue: 64
+  arrival_rate: 0.9
+  cpu_power_cost: 0.01
+  mem_bandwidth: 100.0
+agent:
+  algo: MADDPG
+  gamma: 0.99
+  lr_actor: 1e-4
+  lr_critic: 1e-3
+  tau: 0.01
+  buffer_size: 100000
+  batch_size: 256
+  hidden_dim: 256
+  noise_std: 0.2
+logging:
+  out_dir: artifacts/maddpg
+  save_interval: 50
